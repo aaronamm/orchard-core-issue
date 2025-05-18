@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{45253D6C-FB85-454E-B1BE-D312B9E2F997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{6832ECD4-0AB1-44FA-BF4C-B0C75791C230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardExample.Module", "src\Modules\OrchardExample.Module\OrchardExample.Module.csproj", "{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6832ECD4-0AB1-44FA-BF4C-B0C75791C230} = {45253D6C-FB85-454E-B1BE-D312B9E2F997}
+		{A34E06F4-A595-45FD-A75E-7AF39B9CE2DE} = {6832ECD4-0AB1-44FA-BF4C-B0C75791C230}
+	EndGlobalSection
+EndGlobal

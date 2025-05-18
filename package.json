@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "workspaces": [
+    "src/Modules/*",
+    "src/Themes/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace orchard-example-module run dev"
+  }
+}
