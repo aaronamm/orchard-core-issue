@@ -285,4 +285,4 @@ App_Data
 # Ignore auto generated TS, SCSS files
 wwwroot/*
 
-
+src/OrchardExample.Cms/${var:configDir}/
