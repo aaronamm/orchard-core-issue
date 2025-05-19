@@ -14,7 +14,6 @@ async function startConnection() {
   console.log('connected');
 }
 
-
 startConnection();
 
 export default function Ping() {

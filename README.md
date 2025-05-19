@@ -13,22 +13,22 @@ $ yarn run dev
 - Start the website
 ```sh
 # At root of the project 
-$ dotnet watch run --project src/OrchardExample.Cms/OrchardExample.Cms.csproj
+$ dotnet run --project src/OrchardExample.Cms/OrchardExample.Cms.csproj
 ```
 
 Set up a new website with 
 
 - Open a web browser and navigate to https://localhost:5001
-
 - Select the `Blank site` recipe and wait for a while until the setup has finished.
 - Log in to admin page and enable `OrchardExample.Module` module.
 - Change theme to `The Default Theme`.
+- Log out from the website.
 - Go to https://localhost:5001
-- Check `OrchardExample.Cms/App_Data/logs`
+- Check `OrchardExample.Cms/App_Data/logs`, you will find error messages.
 - If you check a developer console tool of a browser, you will find messages like these: 
 ```txt
 connected with id HpHmHycEwCTe3dWbhA9D5Q
-Ping.ts:9 Got a response message as Pong pong....
+Got a response message as Pong pong....
 ```
 
 ## Other tips
