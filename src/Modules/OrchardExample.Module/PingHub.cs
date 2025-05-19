@@ -31,4 +31,9 @@ public class PingHub : Hub
         _logger.LogInformation("signalR connectId {connectionId}", connectionId);
         await Clients.Caller.SendAsync("pong", "Pong pong....");
     }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+    }
 }
