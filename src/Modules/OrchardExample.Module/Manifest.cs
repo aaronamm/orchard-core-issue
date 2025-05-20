@@ -1,3 +1,4 @@
+using CrestApps.OrchardCore.SignalR.Core;
 using OrchardCore.Modules.Manifest;
 
 [assembly: Module(
@@ -6,5 +7,8 @@ using OrchardCore.Modules.Manifest;
     Website = "https://orchardcore.net",
     Version = "0.0.1",
     Description = "OrchardExample.Module",
-    Category = "Content Management"
+    Category = "Content Management",
+    Dependencies = [
+        SignalRConstants.Feature.Area
+    ]
 )]

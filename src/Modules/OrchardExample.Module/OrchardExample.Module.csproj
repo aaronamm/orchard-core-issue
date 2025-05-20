@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CrestApps.OrchardCore.SignalR" Version="1.2.0-beta-0009" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.2.0" />
     <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.7" />
     <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.7" />
     <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.7" />

@@ -1,15 +1,8 @@
 using OrchardCore.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Host.UseNLogHost();
-
-builder.Services.AddOrchardCms();
-
-builder.Services.AddSignalR(opt =>
-    {
-        opt.EnableDetailedErrors = true;
-    });
+builder.Services .AddOrchardCms();
 
 var app = builder.Build();
 

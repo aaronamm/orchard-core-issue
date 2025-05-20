@@ -1,5 +1,22 @@
-﻿<script asp-src="~/OrchardExample.Module/scripts/orchard-example-module.js" at="Head"></script>
+﻿@using CrestApps.OrchardCore.SignalR.Core.Services
+@using OrchardExample.Module
+@inject HubRouteManager HubRouteManager
 
-<script>
-  OrchardExampleModule.ping();
+@{
+  var url = HubRouteManager.GetUriByHub<PingHub>(ViewContext.HttpContext);
+}
+
+<script type="text/javascript" at="Foot" depends-on="signalr">
+  document.addEventListener("DOMContentLoaded", function () {
+    var connection = new signalR.HubConnectionBuilder()
+      .withUrl("@url")
+      .build();
+
+    try {
+      await connection.start();
+      console.log('Connected to SignalR hub!');
+    } catch (error) {
+      console.error('Connection failed:', error.message);
+    }
+  });
 </script>
