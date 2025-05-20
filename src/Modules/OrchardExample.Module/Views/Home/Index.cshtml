@@ -7,16 +7,22 @@
 }
 
 <script type="text/javascript" at="Foot" depends-on="signalr">
+
   document.addEventListener("DOMContentLoaded", function () {
     var connection = new signalR.HubConnectionBuilder()
       .withUrl("@url")
       .build();
 
-    try {
-      await connection.start();
-      console.log('Connected to SignalR hub!');
-    } catch (error) {
-      console.error('Connection failed:', error.message);
+    async function startConnection() {
+      try {
+        await connection.start();
+        console.log('Connected to SignalR hub!');
+      } catch (error) {
+        console.error('Connection failed:', error.message);
+      }
     }
+
+    startConnection();
+
   });
 </script>
