@@ -32,6 +32,11 @@ public class PingHub : Hub
         await Clients.Caller.SendAsync("pong", "Pong pong....");
     }
 
+    public override Task OnDisconnectedAsync(Exception? exception)
+    {
+        return Task.CompletedTask;
+    }
+
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);
