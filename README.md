@@ -34,6 +34,8 @@ Got a response message as Pong pong....
 ## Other tips
 Add a project to the solution
 ```sh
+
+$ dotnet sln add ./src/OrchardExample.Cms/OrchardExample.Cms.csproj
 $ dotnet sln add ./src/Modules/OrchardExample.Module/OrchardExample.Module.csproj
 ```
 
