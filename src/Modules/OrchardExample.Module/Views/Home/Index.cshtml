@@ -6,8 +6,9 @@
   var url = HubRouteManager.GetUriByHub<PingHub>(ViewContext.HttpContext);
 }
 
-<script type="text/javascript" at="Foot" depends-on="signalr">
+<script asp-name="signalr" script at="Head"></script>
 
+<script at="Head">
   document.addEventListener("DOMContentLoaded", function () {
     var connection = new signalR.HubConnectionBuilder()
       .withUrl("@url")
@@ -16,7 +17,7 @@
     async function startConnection() {
       try {
         await connection.start();
-        console.log('Connected to SignalR hub!');
+        console.log(`connected with connectionId: ${connection.connectionId}`);
       } catch (error) {
         console.error('Connection failed:', error.message);
       }
